@@ -1,22 +1,44 @@
 $(document).ready(function() {
 	$('#formOne').submit(function() {
-		$('#employee-name').val().append('#test');
+		// Old way I used to grab form fields.
+		// let employeeName = $('#employee-name').val();
+		// $('#test').append(`<td>${employeeName}</td>`);
 
-		// below is future use to store contacts in an iterable list
-		// const employeeNames = [];
-		// const employeeNumbers = [];
-		// const employeeTitles = [];
-		// const employeeName = $('#person1').map(function() {
-		// 	return $(this).val();
-		// });
+		// let title = $('#title').val();
+		// $('#test').append(`<td>${title}</td>`);
 
-		// employeeInfo.push(employeeName);
+		// let manager = $('#manager').val();
+		// $('#test').append(`<td>${manager}</td>`);
 
-		// $('.person2').append('blah blah');
-		// $('.animal').append('blah blah');
-		// $('.exclamation').append('blah blah');
-		// $('.verb').append('blah blah');
-		// $('.noun').append('blah blah');
+		// let address = $('#address').val();
+		// $('#test').append(`<td>${address}</td>`);
+
+		// let number = $('#number').val();
+		// $('#test').append(`<td>${number}</td>`);
+
+		const contacts = [
+			$('#employee-name').val(),
+			$('#title').val(),
+			$('#manager').val(),
+			$('#address').val(),
+			$('#number').val()
+		];
+
+		createTable = () => {
+			//i = 1;
+			$('tbody').append(`<tr><th scope="row"></th></tr>`);
+
+			// for each or for of loop?
+			// contacts, function(index, value)
+			// $('tbody').append(`<tr><td>${value}</td></tr>`);
+
+			for (let item of contacts) {
+				$('#maybe').append(`<td>${item}</td>`);
+			}
+			//i++;
+		};
+		createTable();
+		console.log(contacts);
 		event.preventDefault();
 		$('#formOne').trigger('reset');
 	});
