@@ -22,10 +22,19 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
     <script src="app.js"></script></head>
     <link rel="stylesheet" href="index.css">
   <body>
-    <div class="container text-center">
+
+    <div class="card bg-dark text-white vh-1" id='test2'>
+      <img src="https://images.unsplash.com/photo-1505409859467-3a796fd5798e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
       <h1>Dunder Mifflin Employee Directory</h1>
     </div>
 
@@ -67,12 +76,12 @@
             <div class="col-5 margin-left">
               
               <input required id="address" class="form-control"
-                type="text" placeholder="Email Address">
+                type="email" placeholder="Email Address">
             </div>
             
             <div class="col-4 margin-left">
               
-              <input required id="number" class="form-control" type="text"
+              <input required id="number" class="form-control" type="number"
                 placeholder="Phone Number">
             </div>
             <div class="col margin-left">
@@ -122,8 +131,8 @@
     <br>
 
     <div class="container-sm" id='contact-table'>
-      <table class="table">
-        <thead class="thead-light">
+      <table class="table table-dark table-bordered">
+        <thead class="thead-dark">
           <tr>
             <!-- <th scope="col">#</th> -->
             <th scope="col">Name</th>

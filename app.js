@@ -28,7 +28,7 @@ $(document).ready(function() {
 			//i = 1;
 
 			// This line adds a new table row every time submit is clicked.
-			$('tbody').append(`<tr><th scope="row"></th></tr>`);
+			$('tbody').append(`<tr></tr>`);
 
 			// for each or for of loop?
 			// contacts, function(index, value)
