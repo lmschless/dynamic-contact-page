@@ -1,12 +1,12 @@
 # Contacts page with dynamically created table
 
-#### _One page app that allows users to add contacts and see them dynamically displayed as a table, 1/27/20_
+#### _One page app that allows users to add contacts and see them dynamically displayed as a table, 1/29/20_
 
 #### By _**Luke Schlessinger**_
 
 ## Setup/Installation Requirements
 
-* _Requires: index.html, app.js_
+* _Requires: index.html, app.js, index.css_
 
 
 ## Future Features
@@ -21,7 +21,7 @@ _Please open an issue if you find any bugs, thanks!_
 
 ## Technologies Used
 
-_Bootstrap for the form and table. jQuery_
+_Bootstrap for the form and table. jQuery. Google fonts. Font Awesome_
 
 ### License
 

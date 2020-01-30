@@ -42,6 +42,6 @@ $(document).ready(function() {
 		createTable();
 		console.log(contacts);
 		event.preventDefault();
-		$('#formOne').trigger('reset');
+		$('#formOne').trigger('reset'); // clears form so user can add another contact
 	});
 });
