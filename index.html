@@ -9,6 +9,8 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"></script>
@@ -21,37 +23,100 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
     <script src="app.js"></script></head>
+    <link rel="stylesheet" href="index.css">
   <body>
-    <div class="container text-align-center">
+    <div class="container text-center">
       <h1>Dunder Mifflin Employee Directory</h1>
     </div>
-    <div class="container">
 
-      <form id="formOne">
-        <div class="form-group">
-          <label for="person1">Employee Name</label>
-          <input required id="employee-name" class="form-control" type="text">
+    
+    <div class="container" id="test">
+      <div class="row">
+        <div class="col-sm">
+          <form id="formOne">
+
+
+            <div class="form-row">
+              <div class="input-group ">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-user"></i></div>
+              <div class="col-5 margin-left">
+                <input required id="employee-name" class="form-control"
+                  type="text" placeholder="Employee Name">
+              </div>
+
+              <div class="col-3 margin-left">
+                
+                <input required id="title" class="form-control" type="text"
+                  placeholder="Enter Title">
+
+              </div>
+              <div class="col margin-left">
+                    <input required id="manager" class="form-control" type="text"
+                      placeholder="Manager Name">
+                  </div>
+              </div>
+            </div>
+          </div>
+<br>
+<div class="container-fluid">
+          <div class="form-row">
+            <div class="input-group ">
+              <!-- <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-user"></i></div> -->
+            <div class="col-5 margin-left">
+              
+              <input required id="address" class="form-control"
+                type="text" placeholder="Email Address">
+            </div>
+            
+            <div class="col-4 margin-left">
+              
+              <input required id="number" class="form-control" type="text"
+                placeholder="Phone Number">
+            </div>
+            <div class="col margin-left">
+              <div class>
+                <button type="submit" class="btn btn-primary btn-">Add Contact</button>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+              <!-- <div class="form-group">
+          <label for="name">Employee Name</label>
+          <input required id="employee-name" class="form-control" type="text" placeholder="Enter Employee Name"> 
         </div>
         <div class="form-group">
-          <label for="person2">Title</label>
-          <input required id="title" class="form-control" type="text">
-        </div> 
-        <div class="form-group">
-          <label for="animal">Manager</label>
-          <input required id="manager" class="form-control" type="text">
+          <label for="title">Title</label>
+          <input required id="title" class="form-control" type="text" placeholder="Enter Title">
+        </div>  -->
+              <!-- <div class="form-group">
+                <label for="manager">Manager</label>
+                <input required id="manager" class="form-control" type="text"
+                  placeholder="Enter Manager Name">
+              </div> -->
+              <!-- <div class="form-group">
+                <label for="email"></label>
+                <input required id="address exampleInputEmail1"
+                  class="form-control" type="email" placeholder="Enter Email
+                  Address">
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input required id="number" class="form-control" type="number"
+                  placeholder="Enter Phone Number">
+              </div> -->
+              
+            </div>
+            
+
+          </form>
+
         </div>
-        <div class="form-group">
-          <label for="exclamation">Home Address</label>
-          <input required id="address" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="verb">Phone Number</label>
-          <input required id="number" class="form-control" type="number">
-        </div>
-        <button type="submit" class="btn-primary">Add Contact</button>
-        
-        </div>
-      </form>
+      </div>
     </div>
 
     <br>
@@ -59,12 +124,12 @@
     <div class="container-sm" id='contact-table'>
       <table class="table">
         <thead class="thead-light">
-          <tr >
+          <tr>
             <!-- <th scope="col">#</th> -->
             <th scope="col">Name</th>
             <th scope="col">Title</th>
             <th scope="col">Manager</th>
-            <th scope="col">Home Address</th>
+            <th scope="col">Email Address</th>
             <th scope="col">Phone Number</th>
 
           </tr>
